@@ -17,6 +17,33 @@ public class Main {
         double[] itemPrices = {9.5, 2.5, 5.2};
         boolean[] itemAvailable = {true, true, true};
 
+        // addd items to the Array using scanner class/object
+        do {
+            System.out.println("Are you adding an items?: Y or N"); // hint the user
+            String userInput = in.next();
+
+            if (userInput.equalsIgnoreCase( anotherString: "n")) break;
+            System.out.println("Enter item name: ");
+            String name = in.next();
+
+            System.out.println("Enter item price: ");
+            double price = in. nextDouble();
+
+            System.out.println("Enter item status: ");
+            boolean status = in.nextBoolean(); // true / false
+
+            System.out.println("Name \t Price \t Status");
+            System.out.println(Name+ "\t" +price+ "\t" +status);
+
+            // add new captured items to the store
+            itemName = Arrays.copyOf(itemName, newLength itemName.length+1);
+             // Array is resized {"banana", "mango", "orange" ""}
+            itemName[itemName.length-1] name;
+            System.out.println(Arrays.toString(itemName));
+
+
+        } while (true);
+
         // Print the items one-by-one
         for (int i = 0; i < itemName.length; i++) {
             // check the availability of an item and print
@@ -28,6 +55,9 @@ public class Main {
                             check = "Sold out";
         }
             System.out.println(itemName[i])+ " "+itemPrices[i]+ " "+check);
+ /*
+
+  */
         }
     }
 }
