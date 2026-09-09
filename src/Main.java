@@ -55,6 +55,20 @@ public class Main {
                             check = "Sold out";
         }
             System.out.println(itemName[i])+ " "+itemPrices[i]+ " "+check);
+
+// Linear search by item name
+            for (int i = 0; i < itemNam.length; i++) {
+                System.out.println("Enter the item:__");
+                String searchTerm = in.next();
+
+                if (itemName[i].equalsIgnoreCase(searchTerm)) {
+                    System.out.println(itemName[i]+ "\t" +itemPrices[i]+ "\t" +itemAvailable[i]);
+
+                } else {
+                    System.out.println(searchTerm+ "not found.");
+                }
+
+            }
  /*
 
   */
