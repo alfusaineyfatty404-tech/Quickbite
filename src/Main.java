@@ -8,6 +8,8 @@ public class Main {
         itemPrices: data type for this Array is double
         itemAvailable: data type for this Array is boolean
          */
+        // Initialze your scanner obj
+        Scanner in = new scanner(System.in);
 
         String[] itemName = {"banana", "mango", "orange"};
         double[] itemPrices = {9.5, 2.5, 5.2};
